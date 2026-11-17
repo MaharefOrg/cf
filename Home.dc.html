@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=Jost:wght@300;400;500&amp;family=Noto+Naskh+Arabic:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F0E9;color:#353A34;font-family:'Jost',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}
+a{color:#353A34;text-decoration:none}a:hover{color:#777B6B}a{transition:color .5s cubic-bezier(.16,1,.3,1)}
+a:focus-visible,button:focus-visible{outline:1px solid #353A34;outline-offset:4px}
+.serif{font-family:'Cormorant Garamond',serif;font-weight:400}
+@font-face{font-family:'Camel';src:url("uploads/The Year of The Camel 2/TheYearofTheCamel-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:'Camel';src:url("uploads/The Year of The Camel 2/TheYearofTheCamel-Medium.otf") format("opentype");font-weight:500;font-display:swap}
+@font-face{font-family:'Camel';src:url("uploads/The Year of The Camel 2/TheYearofTheCamel-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+@font-face{font-family:'Kufam';src:url("uploads/Kufam/Kufam-VariableFont_wght.ttf") format("truetype");font-weight:100 900;font-display:swap}
+.ar{font-family:'Kufam','Camel','Noto Naskh Arabic',serif}
+#bloom-copy .ar{display:none!important}
+.img{background-size:cover;background-position:center;background-color:#D5C8B8;border-radius:999px 999px 0 0}
+.ph{background:repeating-linear-gradient(135deg,#E5D8D1 0 12px,#D5C8B8 12px 13px);display:flex;align-items:center;justify-content:center;font-family:'Jost',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#777B6B;text-align:center;padding:16px}
+.shopwrap:hover .shopmenu,.shopwrap:focus-within .shopmenu{display:flex!important}
+.rv{opacity:0;transform:translate3d(0,44px,0) scale(.98);filter:blur(10px);transition:opacity 1.4s cubic-bezier(.16,1,.3,1),transform 1.7s cubic-bezier(.16,1,.3,1),filter 1.4s cubic-bezier(.16,1,.3,1);will-change:opacity,transform,filter}
+.rv.in{opacity:1;transform:none;filter:blur(0)}
+.mask{clip-path:inset(100% 0 0 0);transform:translate3d(0,24px,0) scale(1.04);transition:clip-path 1.9s cubic-bezier(.22,1,.36,1),transform 2.2s cubic-bezier(.16,1,.3,1)}
+.mask,.mask.in{clip-path:none!important;opacity:1!important;transition:none!important;animation:softFloat 7s ease-in-out infinite}
+@keyframes softFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+section:not(#top){position:relative;margin-top:-7vh;border-radius:40px 40px 0 0;box-shadow:0 -24px 60px rgba(53,58,52,.14);background-color:#F4F0E9;will-change:transform}
+.img{will-change:translate}
+.shopwrap:hover .shopmenu>div{animation:glassIn .5s cubic-bezier(.16,1,.3,1)}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes glassIn{from{opacity:0;transform:translateY(-10px) scale(.97);filter:blur(6px)}to{opacity:1;transform:none;filter:blur(0)}}
+@media (max-width:760px){
+[style*="grid-column"]{grid-column:auto!important;margin-top:0!important}
+[style*="repeat(12"]{grid-template-columns:1fr!important}
+[style*="1.4fr"]{grid-template-columns:1fr!important}
+nav{flex-wrap:wrap!important;top:10px!important;left:10px!important;right:10px!important;border-radius:24px!important;padding:10px 14px!important;gap:8px!important}
+nav>div{white-space:normal!important;flex-wrap:wrap!important;justify-content:center!important;gap:6px 16px!important}
+h1{font-size:60px!important}
+h2{font-size:42px!important}
+#bloom-ar{font-size:44px!important;position:static!important;margin:0 0 6px!important}
+#top{height:67vh!important}
+#bloom-layer{height:67vh!important}
+#bloom-copy{top:112px!important;bottom:auto!important;left:20px!important;right:20px!important}
+#bloom-copy>p:first-child{margin-bottom:6px!important}
+#bloom-copy .ar{font-size:30px!important;margin-top:12px!important;line-height:1.2!important}
+#bloom-copy p[style*="uppercase"]{font-size:14px!important;letter-spacing:.08em!important;margin-top:10px!important}
+#bloom-copy .serif[style*="italic"]{font-size:28px!important;margin-top:12px!important}
+#bloom-copy>div{margin-top:24px!important}
+nav{justify-content:center!important}
+nav>div{font-size:11px!important;letter-spacing:.08em!important;gap:6px 14px!important}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.rv,.mask{opacity:1!important;transform:none!important;filter:none!important;clip-path:none!important;transition:none!important}.shopmenu>div{animation:none!important}}
+</style>
+</helmet>
+<div style="position:relative;background:#F4F0E9;overflow-x:hidden">
+
+<nav style="position:fixed;top:16px;left:clamp(12px,2.5vw,32px);right:clamp(12px,2.5vw,32px);z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px clamp(16px,2.6vw,36px) 12px clamp(14px,2vw,26px);border-radius:999px;background:linear-gradient(135deg,rgba(244,240,233,.52),rgba(244,240,233,.28));backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border:1px solid rgba(255,255,255,.55);box-shadow:0 10px 30px rgba(53,58,52,.12),inset 0 1px 0 rgba(255,255,255,.5);font-size:13px;letter-spacing:.14em;text-transform:uppercase">
+  <a href="#top" aria-label="Côté Fleurs home" style="display:block"><img src="uploads/pasted-1794934839483-0.png" alt="Côté Fleurs Flowershop Dubai" style="height:44px;width:auto;display:block"></a>
+  <div style="display:flex;flex-wrap:nowrap;gap:8px clamp(12px,1.8vw,28px);justify-content:flex-end;align-items:center;white-space:nowrap">
+    <div class="shopwrap" style="position:relative">
+      <a href="#collections" style="display:block;padding:8px 0">Shop Online</a>
+      <div class="shopmenu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:12px;flex-direction:column;gap:4px;min-width:200px;white-space:nowrap">
+        <div style="background:rgba(244,240,233,.9);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.55);border-radius:20px;padding:14px 8px;box-shadow:0 10px 30px rgba(53,58,52,.12);display:flex;flex-direction:column;gap:2px">
+          <a href="#bespoke" style="padding:10px 16px;border-radius:12px">Create Your Own</a>
+          <a href="#subscriptions" style="padding:10px 16px;border-radius:12px">Subscriptions</a>
+        </div>
+      </div>
+    </div><a href="#story">Our Story</a><a href="Visit.dc.html">Visit Us</a><a href="Services.dc.html">Services</a>
+    <a href="Home.ar.dc.html" aria-label="Switch to Arabic" class="ar" style="border:1px solid #353A34;padding:8px 14px;border-radius:999px;font-size:15px;letter-spacing:0;text-transform:none">عربي</a>
+  </div>
+</nav>
+
+<section id="top" style="position:relative;height:320vh;background:transparent">
+  <div id="bloom-layer" style="position:fixed;top:0;left:0;right:0;height:100vh;overflow:hidden;z-index:0;background:#C7CDC2">
+    <video id="bloom-video" muted="" playsinline="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#C7CDC2"><source src="uploads/peony-bloom-u.mp4" type="video/mp4"></video>
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(199,205,194,.92) 0%,rgba(199,205,194,.6) 45%,rgba(199,205,194,0) 75%)"></div>
+    <div id="bloom-copy" style="position:absolute;left:clamp(20px,5vw,80px);bottom:clamp(40px,9vh,110px);right:clamp(20px,5vw,80px);max-width:980px;padding:clamp(24px,4vh,48px) clamp(24px,4vw,56px);margin-left:calc(-1*clamp(24px,4vw,56px));border-radius:999px 999px 0 0;background:radial-gradient(ellipse at 45% 50%,rgba(199,205,194,.9) 0%,rgba(199,205,194,.6) 55%,rgba(199,205,194,0) 100%);backdrop-filter:blur(6px)">
+      <div style="position:relative;display:inline-block;margin:0 0 14px"><p id="bloom-ar" class="ar" style="display:block;width:100%;margin:0 0 6px;white-space:nowrap;text-align:right;font-size:clamp(40px,5vw,80px);color:#353A34;animation:floatY 6s ease-in-out infinite;will-change:transform">صوب الورد</p><h1 class="serif" style="margin:0;font-size:clamp(64px,13vw,200px);line-height:.9;letter-spacing:-.01em">Côté Fleurs</h1>
+      <p class="ar" style="margin:20px 0 0;text-align:right;font-size:clamp(34px,4.4vw,64px);line-height:1.15;color:#353A34;font-weight:500">ورد فرنسي، وودّ إماراتي</p></div>
+      <p style="margin:14px 0 0;font-size:clamp(16px,1.6vw,22px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#353A34">French blooms, Emarati heart.</p>
+      <p class="serif" style="margin:18px 0 0;font-size:clamp(26px,3.4vw,46px);font-style:italic;line-height:1.1">The Garden Next Door.</p>
+      
+      
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px">
+        <a href="#collections" style="background:#353A34;color:#F4F0E9;padding:16px 28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px">Explore the Flowers</a>
+        <a href="#story" style="background:#F4F0E9;border:1px solid #353A34;padding:15px 28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px">Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collections" style="position:relative;z-index:1;background:#F4F0E9;padding:clamp(90px,14vw,200px) clamp(20px,5vw,80px) clamp(60px,8vw,120px)">
+  <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#777B6B">01 — Flowers for every feeling</p>
+  <h2 class="serif" style="margin:0;font-size:clamp(48px,8vw,120px);line-height:.95;max-width:1100px">For everything <em>words cannot say.</em></h2>
+  <p style="margin:28px 0 0;font-size:18px;max-width:560px;line-height:1.6">A little joy. A thoughtful gesture. A moment worth remembering.<br>Whatever the feeling, there’s a flower for it.</p>
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2.5vw,36px);margin-top:clamp(50px,7vw,100px)">
+    <figure style="margin:0;grid-column:span 7"><div class="img" role="img" aria-label="Pink rose wrapped in woven sleeve with a gift tag" style="aspect-ratio:4/5;background-image:url(work/crop-0.jpg)"></div><figcaption style="display:flex;justify-content:space-between;margin-top:12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase"><span>Signature arrangements</span><span style="color:#777B6B">Collection</span></figcaption></figure>
+    <figure style="margin:0;grid-column:span 5;margin-top:clamp(60px,10vw,160px)"><div class="img" role="img" aria-label="Peach roses and white chrysanthemums in a bouquet" style="aspect-ratio:1/1;background-image:url(work/crop-12.jpg)"></div><figcaption style="display:flex;justify-content:space-between;margin-top:12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase"><span>Seasonal flowers</span><span style="color:#777B6B">Collection</span></figcaption></figure>
+    <figure style="margin:0;grid-column:span 4"><div class="img" role="img" aria-label="Cup and saucer with coffee" style="aspect-ratio:3/4;background-image:url(work/crop-11.jpg)"></div><figcaption style="display:flex;justify-content:space-between;margin-top:12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase"><span>Gifts</span><span style="color:#777B6B">Collection</span></figcaption></figure>
+    <figure style="margin:0;grid-column:span 4"><div class="img" role="img" aria-label="Pink and pale blooms in a white ceramic bowl" style="aspect-ratio:3/4;background-image:url(work/crop-8.jpg)"></div><figcaption style="display:flex;justify-content:space-between;margin-top:12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase"><span>Bespoke arrangements</span><span style="color:#777B6B">Collection</span></figcaption></figure>
+    <figure style="margin:0;grid-column:span 4;margin-top:clamp(40px,6vw,100px)"><div class="img" role="img" aria-label="White bouquet in a cream paper bag" style="aspect-ratio:3/4;background-image:url(work/crop-19.jpg)"></div><figcaption style="display:flex;justify-content:space-between;margin-top:12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase"><span>Floral subscriptions</span><span style="color:#777B6B">Collection</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="story" style="background:#E5D8D1;padding:clamp(90px,12vw,180px) clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(24px,4vw,60px);align-items:center">
+  <div style="grid-column:1/span 6">
+    <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#777B6B">02 — The story</p>
+    <h2 class="serif" style="margin:0;font-size:clamp(44px,6vw,92px);line-height:1;">It began with two friends. <em>And a love of flowers.</em></h2>
+    <div style="margin-top:34px;font-size:17px;line-height:1.7;max-width:540px">
+      <p style="margin:0 0 16px">Over a decade ago, two childhood friends shared a dream.</p>
+      <p style="margin:0 0 16px">Inspired by their love of freshly cut flowers and the emotions they evoke, they imagined a different kind of flower shop.</p>
+      <p style="margin:0 0 16px">One that felt personal. One that welcomed its neighbours. One where every arrangement carried a little more meaning.</p>
+      <p style="margin:0 0 16px">That dream became Côté Fleurs.</p>
+      <p style="margin:0">Today, you can enjoy the beauty of the flowers, taste delicious drinks and settle into a warm atmosphere.</p>
+    </div>
+    <a href="#story" style="display:inline-block;margin-top:36px;border-bottom:1px solid #353A34;padding-bottom:4px;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Visit Us</a>
+  </div>
+  <div style="grid-column:8/span 5">
+    <div class="img" role="img" aria-label="Apron with the Côté Fleurs logo" style="aspect-ratio:4/5;background-image:url(work/apron.jpg)"></div>
+    <p style="margin:12px 0 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#777B6B">The shop, Al Khawaneej</p>
+  </div>
+</section>
+
+<section style="padding:clamp(90px,12vw,180px) 0 clamp(60px,8vw,120px);background:#F4F0E9">
+  <div style="padding:0 clamp(20px,5vw,80px)">
+    <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#777B6B">03 — The art of flowers</p>
+    <h2 class="serif" style="margin:0;font-size:clamp(48px,8vw,120px);line-height:.95">A little wild. <em>Entirely beautiful.</em></h2>
+    <p style="margin:28px 0 0;font-size:17px;max-width:600px;line-height:1.6">Our arrangements embrace the natural romance of flowers. Wild in spirit, thoughtful in composition and carefully finished by hand.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;align-items:start;gap:clamp(10px,1.5vw,20px);margin-top:clamp(50px,7vw,100px);padding:0 clamp(20px,5vw,80px)">
+    <div class="img" role="img" aria-label="Close-up of pink peony and white orchid" style="aspect-ratio:3/4;background-image:url(work/crop-9.jpg)"></div>
+    <div class="img" role="img" aria-label="Pink roses and gerbera in a white vase" style="aspect-ratio:3/4;background-image:url(work/crop-4.jpg);margin-top:clamp(40px,6vw,120px)"></div>
+    <div class="img" role="img" aria-label="Orange-brown dried flowers with palm leaves" style="aspect-ratio:3/4;background-image:url(work/crop-5.jpg)"></div>
+  </div>
+</section>
+
+<section id="source" style="background:#353A34;color:#F4F0E9;padding:clamp(90px,12vw,180px) clamp(20px,5vw,80px)">
+  <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#C7CDC2">04 — From farm to flower</p>
+  <h2 class="serif" style="margin:0;font-size:clamp(48px,7vw,104px);line-height:1;max-width:1000px">Beautiful things <em>begin at the source.</em></h2>
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(24px,4vw,60px);margin-top:clamp(50px,7vw,96px)">
+    <div style="grid-column:1/span 5;font-size:17px;line-height:1.7">
+      <p style="margin:0 0 16px">From Ecuador and Kenya to the Netherlands, we source exceptional flowers directly from carefully selected growers around the world.</p>
+      <p style="margin:0 0 16px">Our relationships with these farms allow us to offer distinctive varieties, remarkable freshness and an evolving selection of seasonal blooms.</p>
+      <p style="margin:0">Every stem is chosen with intention.</p>
+      <a href="#source" style="display:inline-block;margin-top:34px;border-bottom:1px solid #F4F0E9;padding-bottom:4px;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Our Distinction</a>
+    </div>
+    <div class="serif" style="grid-column:7/span 6;display:flex;flex-direction:column;font-size:clamp(28px,3.6vw,52px)">
+      <div style="padding:20px 0;border-top:1px solid #777B6B">Ecuador</div>
+      <div style="padding:20px 0;border-top:1px solid #777B6B">Kenya</div>
+      <div style="padding:20px 0;border-top:1px solid #777B6B">The Netherlands</div>
+      <div style="padding:20px 0;border-top:1px solid #777B6B;border-bottom:1px solid #777B6B;font-style:italic;color:#C7CDC2">Dubai</div>
+      <img src="uploads/pasted-1794936240928-0.png" alt="Wildflower meadow at dawn with lavender and yellow blooms" style="display:block;margin-top:24px;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:999px 999px 0 0">
+    </div>
+  </div>
+</section>
+
+<section id="bespoke" style="padding:clamp(90px,12vw,180px) clamp(20px,5vw,80px);background:#C7CDC2;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(24px,4vw,60px)">
+  <div style="grid-column:1/span 6">
+    <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase">05 — Made just for you</p>
+    <h2 class="serif" style="margin:0;font-size:clamp(44px,6vw,92px);line-height:1">Some gestures deserve <em>something personal.</em></h2>
+    <p style="margin:28px 0 0;font-size:17px;line-height:1.7;max-width:520px">Tell us the occasion, the feeling or simply the flowers you love. Our fleuristes will help create an arrangement that feels entirely yours.</p>
+    <a href="#" style="display:inline-block;margin-top:36px;background:#353A34;color:#F4F0E9;padding:16px 28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px">Create Your Own</a>
+  </div>
+  <div style="grid-column:8/span 5;background:#F4F0E9;padding:clamp(24px,3vw,40px);font-size:15px">
+    <p style="margin:0 0 18px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#777B6B">Your enquiry</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Occasion</span><span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Preferred flowers</span><span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Colour preferences</span><span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Budget</span><span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Delivery date</span><span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Personal message</span><span style="border:1px solid #353A34;border-radius:999px;padding:8px 14px">Additional notes</span>
+    </div>
+  </div>
+</section>
+
+<section id="subscriptions" style="padding:clamp(90px,12vw,180px) clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(24px,4vw,60px);align-items:center">
+  <div style="grid-column:1/span 5">
+    <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#777B6B">06 — Flowers that return</p>
+    <h2 class="serif" style="margin:0;font-size:clamp(44px,6vw,92px);line-height:1">A little beauty, <em>on repeat.</em></h2>
+    <p style="margin:28px 0 0;font-size:17px;line-height:1.7">Fresh flowers have a way of making ordinary days feel extraordinary. Bring that feeling home, again and again, with our floral subscriptions.</p>
+    <a href="#" style="display:inline-block;margin-top:36px;border:1px solid #353A34;padding:15px 28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px">Explore Subscriptions</a>
+  </div>
+  <div style="grid-column:7/span 6">
+    <div class="img" role="img" aria-label="Pink and cream bouquet in a sage paper wrap" style="aspect-ratio:4/5;background-image:url(work/crop-3.jpg)"></div>
+    <p style="margin:12px 0 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#777B6B">Subscription plans and prices: to be added from the live site</p>
+  </div>
+</section>
+
+<section style="background:#D5C8B8;padding:clamp(90px,12vw,180px) clamp(20px,5vw,80px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(24px,4vw,60px);align-items:end">
+  <div style="grid-column:1/span 6">
+    <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase">07 — The neighbourhood experience</p>
+    <h2 class="serif" style="margin:0;font-size:clamp(44px,6vw,92px);line-height:1">More than <em>a flower shop.</em></h2>
+    <p style="margin:28px 0 0;font-size:17px;line-height:1.7;max-width:520px">Côté Fleurs was created with a dream of bringing people together through flowers, thoughtful gestures and warm hospitality.</p>
+    <a href="#visit" style="display:inline-block;margin-top:36px;background:#353A34;color:#F4F0E9;padding:16px 28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px">Visit Our Shop</a>
+  </div>
+  <div style="grid-column:8/span 5">
+    <div class="img" role="img" aria-label="Espresso cup and saucer on a marble counter" style="aspect-ratio:1/1;background-image:url(work/crop-13.jpg)"></div>
+  </div>
+</section>
+
+<section id="services" style="padding:clamp(90px,12vw,180px) clamp(20px,5vw,80px)">
+  <p style="margin:0 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#777B6B">08 — Floral experiences</p>
+  <h2 class="serif" style="margin:0 0 clamp(50px,7vw,96px);font-size:clamp(44px,6vw,92px);line-height:1;max-width:1000px">Flowers for <em>moments worth remembering.</em></h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,3vw,40px)">
+    <div style="border-top:1px solid #353A34;padding-top:22px"><h3 class="serif" style="margin:0 0 12px;font-size:34px;font-weight:400">Weddings &amp; Bridal</h3><p style="margin:0;font-size:16px;line-height:1.6">Romantic bridal bouquets and floral compositions.</p></div>
+    <div style="border-top:1px solid #353A34;padding-top:22px"><h3 class="serif" style="margin:0 0 12px;font-size:34px;font-weight:400">Events &amp; Celebrations</h3><p style="margin:0;font-size:16px;line-height:1.6">Floral décor and centrepieces for special occasions.</p></div>
+    <div style="border-top:1px solid #353A34;padding-top:22px"><h3 class="serif" style="margin:0 0 12px;font-size:34px;font-weight:400">Corporate Flowers</h3><p style="margin:0;font-size:16px;line-height:1.6">Floral arrangements for offices, hotels, retail spaces and restaurants.</p></div>
+    <div style="border-top:1px solid #353A34;padding-top:22px"><h3 class="serif" style="margin:0 0 12px;font-size:34px;font-weight:400">Workshops</h3><p style="margin:0;font-size:16px;line-height:1.6">Floristry and gift-wrapping experiences.</p></div>
+    <div style="border-top:1px solid #353A34;padding-top:22px"><h3 class="serif" style="margin:0 0 12px;font-size:34px;font-weight:400">Gifts &amp; Plants</h3><p style="margin:0;font-size:16px;line-height:1.6">Thoughtful gifts, wrapping and indoor plants.</p></div>
+  </div>
+  <a href="#services" style="display:inline-block;margin-top:clamp(50px,6vw,80px);border-bottom:1px solid #353A34;padding-bottom:4px;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Explore Our Services</a>
+</section>
+
+<section style="background:#C7CDC2;padding:clamp(120px,16vw,240px) clamp(20px,5vw,80px);text-align:center">
+  <h2 class="serif" style="margin:0;font-size:clamp(52px,9vw,150px);line-height:.95">There’s always a reason <em>for flowers.</em></h2>
+  <p class="serif" style="margin:28px 0 0;font-size:18px;font-style:italic">And sometimes, no reason at all.</p>
+  <a href="#collections" style="display:inline-block;margin-top:44px;background:#353A34;color:#F4F0E9;padding:16px 30px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px">Find Your Flowers</a>
+</section>
+
+<footer id="visit" style="padding:70px clamp(20px,5vw,80px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;font-size:15px;line-height:1.7;background:#F4F0E9;border-top:1px solid #D5C8B8">
+  <div><img src="uploads/pasted-1794934839483-0.png" alt="Côté Fleurs" style="height:52px;width:auto"><p class="ar" style="margin:14px 0 0;font-size:18px">صوب الورد</p></div>
+  <div><p style="margin:0 0 8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#777B6B">Visit</p>Al Khawaneej 2, Near Masjid Al Khawaneej Al Kabeer<br>Shop 03, Dubai, UAE<br><span style="color:#777B6B">Daily, 10 AM to 10 PM (verify before launch)</span></div>
+  <div><p style="margin:0 0 8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#777B6B">Contact</p>WhatsApp 054 404 3374<br>04 333 7525<br><a href="https://www.instagram.com/cote.fleurs/?hl=en" target="_blank" rel="noopener">Instagram @cote.fleurs</a></div>
+  <div><p style="margin:0 0 8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#777B6B">Help</p><a href="#">Delivery Information</a><br><a href="#">Returns &amp; Refunds</a><br><a href="#">FAQs</a><br><a href="#">Privacy Policy</a> · <a href="#">Terms</a></div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    this.onScroll = () => { this.update(); this.alive(); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    const v = document.getElementById('bloom-video');
+    if (v) {
+      v.addEventListener('loadedmetadata', this.onScroll);
+      v.addEventListener('loadeddata', () => { v.style.opacity = '1'; });
+      v.addEventListener('timeupdate', () => { if (v.currentTime >= 2 && window.scrollY === 0) v.pause(); });
+    }
+    this.update();
+    this.reveal();
+  }
+  alive() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const vh = window.innerHeight;
+    document.querySelectorAll('.rv:not(.in),.mask:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < vh * 0.95) el.classList.add('in'); });
+    document.querySelectorAll('section:not(#top)').forEach(s => {
+      const p = Math.min(1, Math.max(0, 1 - s.getBoundingClientRect().bottom / vh));
+      s.style.transform = `scale(${(1 - p * 0.05).toFixed(4)})`;
+      s.style.opacity = (1 - p * 0.4).toFixed(3);
+    });
+    document.querySelectorAll('section:not(#top) .img').forEach(el => {
+      const r = el.getBoundingClientRect();
+      const c = (r.top + r.height / 2 - vh / 2) / vh;
+      el.style.translate = `0 ${(-c * 22).toFixed(1)}px`;
+    });
+  }
+  reveal() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const sel = 'section:not(#top) h2, section:not(#top) h3, section:not(#top) p, section:not(#top) figure, section:not(#top) .img, section:not(#top) img';
+    const els = [...document.querySelectorAll(sel)];
+    els.forEach((el, i) => {
+      el.classList.add(el.classList.contains('img') || el.tagName === 'IMG' ? 'mask' : 'rv');
+      el.style.transitionDelay = (i % 6) * 120 + 'ms';
+    });
+    this.io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); this.io.unobserve(e.target); }
+    }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(el => this.io.observe(el));
+  }
+  componentWillUnmount() {
+    if (this.io) this.io.disconnect();
+    window.removeEventListener('scroll', this.onScroll);
+  }
+  update() {
+    const sec = document.getElementById('top');
+    const v = document.getElementById('bloom-video');
+    if (!sec || !v) return;
+    const r = sec.getBoundingClientRect();
+    const span = sec.offsetHeight - window.innerHeight;
+    const p = Math.min(1, Math.max(0, -r.top / span));
+    if (p === 0 && v.paused && v.currentTime < 2) v.play().catch(() => {});
+    if (p > 0 && !v.paused) v.pause();
+    if (p > 0 && v.duration && !isNaN(v.duration) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const t = 2 + p * (v.duration - 2.05);
+      if (Math.abs(v.currentTime - t) > 0.03) v.currentTime = t;
+    }
+    if (v.readyState >= 2) v.style.opacity = '1';
+    const layer = document.getElementById('bloom-layer');
+    if (layer) layer.style.display = r.bottom > 0 ? 'block' : 'none';
+    const copy = document.getElementById('bloom-copy');
+    if (copy) { copy.style.opacity = String(Math.max(0, 1 - p * 2.2)); copy.style.transform = `translateY(${p * -40}px)`; }
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

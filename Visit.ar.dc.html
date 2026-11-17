@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Jost:wght@300;400;500&amp;family=Noto+Naskh+Arabic:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Kufam';src:url("uploads/Kufam/Kufam-VariableFont_wght.ttf") format("truetype");font-weight:100 900;font-display:swap}
+body{margin:0;background:#F4F0E9;color:#353A34;font-family:'Kufam','Noto Naskh Arabic',serif;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:#353A34;text-decoration:none}a:hover{color:#777B6B}
+.serif{font-family:'Cormorant Garamond',serif;font-weight:400}
+.label{margin:0 0 12px;font-size:14px;color:#777B6B}
+h1,h2{font-family:'Kufam',serif;font-weight:400}
+@keyframes softFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes glassIn{from{opacity:0;transform:translateY(-10px) scale(.97);filter:blur(6px)}to{opacity:1;transform:none;filter:blur(0)}}
+.shopwrap:hover .shopmenu,.shopwrap:focus-within .shopmenu{display:flex!important}
+.shopwrap:hover .shopmenu>div{animation:glassIn .5s cubic-bezier(.16,1,.3,1)}
+@media (max-width:760px){.g2{grid-template-columns:1fr!important}.g3{grid-template-columns:1fr!important}.pad{padding-left:20px!important;padding-right:20px!important}nav{flex-wrap:wrap!important;top:10px!important;left:10px!important;right:10px!important;border-radius:24px!important;padding:10px 14px!important;gap:8px!important;justify-content:center!important}nav>div{white-space:normal!important;flex-wrap:wrap!important;justify-content:center!important;gap:6px 16px!important;font-size:12px!important}header{padding-top:150px!important}body{overflow-x:hidden}}
+</style>
+</helmet>
+<div dir="rtl" style="background:#F4F0E9;min-height:100vh">
+  <nav style="position:fixed;top:16px;left:clamp(12px,2.5vw,32px);right:clamp(12px,2.5vw,32px);z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px clamp(16px,2.6vw,36px) 12px clamp(14px,2vw,26px);border-radius:999px;background:linear-gradient(135deg,rgba(244,240,233,.52),rgba(244,240,233,.28));backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border:1px solid rgba(255,255,255,.55);box-shadow:0 10px 30px rgba(53,58,52,.12),inset 0 1px 0 rgba(255,255,255,.5);font-size:15px">
+    <a href="Home.ar.dc.html" aria-label="كوت فلورز الرئيسية" style="display:block"><img src="uploads/pasted-1794934839483-0.png" alt="كوت فلورز" style="height:44px;width:auto;display:block"></a>
+    <div style="display:flex;flex-wrap:nowrap;gap:8px clamp(12px,1.8vw,28px);justify-content:flex-end;align-items:center;white-space:nowrap">
+      <a href="Home.ar.dc.html#collections">تسوقوا عبر الإنترنت</a><a href="Home.ar.dc.html#story">قصتنا</a><a href="Visit.ar.dc.html">زورونا</a><a href="Services.ar.dc.html">خدماتنا</a>
+      <a href="Visit.dc.html" aria-label="Switch to English" style="border:1px solid #353A34;padding:8px 14px;border-radius:999px;font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.14em">EN</a>
+    </div>
+  </nav>
+
+  <header class="pad" style="padding:clamp(120px,18vh,170px) clamp(20px,5vw,80px) clamp(40px,6vh,70px)">
+    <p class="label">زوروا كوت فلورز · الخوانيج، دبي</p>
+    <h1 style="margin: 0; font-size: 104px; line-height: 1.3">مرحباً بكم <span style="color:#777B6B">في صوب الورد.</span></h1>
+    <p style="margin:28px 0 0;max-width:560px;font-size:20px;line-height:2">محل زهور ومقهى في الخوانيج، تُختار فيه الأزهار بعناية، وتُقدَّم القهوة في غرفة دافئة وهادئة.</p>
+  </header>
+
+  <section class="pad g2" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,80px);align-items:center;padding:0 clamp(20px,5vw,80px) clamp(70px,9vw,130px)">
+    <div style="border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:4/5;background:#D5C8B8"><img src="work/crop-15.jpg" alt="داخل مقهى كوت فلورز مع أريكة كريمية" style="width:100%;height:100%;object-fit:cover;display:block;animation:softFloat 8s ease-in-out infinite"></div>
+    <div>
+      <p class="label">المقهى</p>
+      <h2 style="margin:0;font-size:clamp(40px,4.6vw,68px);line-height:1.3">غرفة صُنعت للبقاء.</h2>
+      <p style="margin:24px 0 0;font-size:19px;line-height:2.1">صديقتا طفولة تخيّلتا محل زهور يشعر بالخصوصية ويرحّب بالجيران. اليوم يمكنكم تصفح الزهور المقطوفة طازجة، وتذوق القهوة، والجلوس في مساحة دافئة تطل على تنسيق الزهور.</p>
+    </div>
+  </section>
+
+  <section class="pad" style="padding:0 clamp(20px,5vw,80px)">
+    <div style="position:relative;width:100%;height:clamp(360px,56vh,560px);border-radius:999px 999px 0 0;overflow:hidden;background:#D5C8B8;animation:softFloat 9s ease-in-out infinite">
+      <iframe title="كوت فلورز على خرائط جوجل" src="https://www.google.com/maps?q=Cote+Fleurs+Al+Khawaneej+2+Dubai&amp;output=embed" style="position:absolute;inset:0;width:100%;height:100%;border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="pad g3" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px);padding:clamp(60px,8vw,110px) clamp(20px,5vw,80px)">
+    <div>
+      <p class="label">العنوان</p>
+      <p style="margin:0;font-size:19px;line-height:2">الخوانيج 2، بالقرب من مسجد الخوانيج الكبير<br>المحل 03، دبي، الإمارات</p>
+    </div>
+    <div>
+      <p class="label">التواصل</p>
+      <p style="margin:0;font-size:19px;line-height:2">واتساب 054 404 3374<br>04 333 7525<br><a href="https://www.instagram.com/cote.fleurs/?hl=en" target="_blank" rel="noopener">إنستغرام @cote.fleurs</a></p>
+    </div>
+    <div>
+      <p class="label">ساعات العمل</p>
+      <p style="margin:0;font-size:19px;line-height:2">سيتم التأكيد لاحقاً.<br>تواصلوا معنا عبر واتساب قبل الزيارة.</p>
+    </div>
+  </section>
+
+  <section class="pad g2" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,80px);align-items:center;padding:0 clamp(20px,5vw,80px) clamp(70px,9vw,130px)">
+    <div>
+      <p class="label">الزهور</p>
+      <h2 style="margin:0;font-size:clamp(40px,4.6vw,68px);line-height:1.3">مختارة بعناية.</h2>
+      <p style="margin:24px 0 0;font-size:19px;line-height:2.1">تأتي أزهارنا من مزارعين في الإكوادور وكينيا وهولندا، تُختار للتنوع والنضارة. كل باقة تُنسّق يدوياً، حسب الطلب أو ضمن اشتراك.</p>
+      <a href="Services.ar.dc.html" style="display:inline-block;margin-top:32px;border-bottom:1px solid #353A34;padding-bottom:4px;font-size:17px">تعرّفوا على خدماتنا</a>
+    </div>
+    <div style="border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:4/5;background:#D5C8B8"><img src="work/crop-13.jpg" alt="إسبريسو على طاولة رخامية" style="width:100%;height:100%;object-fit:cover;display:block;animation:softFloat 8s ease-in-out infinite"></div>
+  </section>
+
+  <footer class="pad" style="background:#353A34;color:#F4F0E9;padding:clamp(60px,8vw,100px) clamp(20px,5vw,80px) 40px">
+    <h2 style="margin:0;font-size:clamp(44px,6vw,92px);line-height:1.2">تعالوا وسلّموا علينا.</h2>
+    <div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:16px">
+      <a href="https://wa.me/971544043374" style="display:inline-block;padding:16px 28px;border-radius:999px;background:#F4F0E9;color:#353A34;font-size:16px">راسلونا على واتساب</a>
+      <a href="Home.ar.dc.html" style="display:inline-block;padding:16px 28px;border-radius:999px;border:1px solid #F4F0E9;color:#F4F0E9;font-size:16px">العودة إلى الرئيسية</a>
+    </div>
+    <p style="margin:60px 0 0;font-size:14px;color:#C7CDC2">كوت فلورز، دبي</p>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>
